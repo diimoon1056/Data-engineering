@@ -21,3 +21,11 @@ CREATE TABLE Enrollments (
     FOREIGN KEY (student_id) REFERENCES Students(student_id),
     FOREIGN KEY (course_id) REFERENCES Courses(course_id)
 );
+
+ALTER TABLE Students ADD COLUMN phone_number VARCHAR(15);
+
+
+
+INSERT INTO students(student_id, first_name, last_name, email, birth_date)
+VALUES
+(1, )
