@@ -40,3 +40,30 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (product_id) REFERENCES Products(product_id) ON DELETE CASCADE
 );
 
+INSERT INTO Customers(customer_id, customer_name, email, phone) 
+VALUES
+(1, 'John Doe', 'johndoe@example.com', '123-456-7890'),
+(2, 'Jane Smith', 'janesmith@example.com', '987-654-3210'),
+(3, 'Michael Johnson', 'michaelj@example.com', '555-123-4567'),
+(4, 'Emily Davis', 'emily.davis@example.com', '444-234-5678'),
+(5, 'David Wilson', 'david.wilson@example.com', '333-345-6789'),
+(6, 'Sarah Brown', 'sarah.brown@example.com', '222-456-7891'),
+(7, 'Daniel Lee', 'daniel.lee@example.com', '111-567-8902'),
+(8, 'Olivia Martin', 'olivia.martin@example.com', '666-678-9012'),
+(9, 'James Harris', 'james.harris@example.com', '777-789-0123'),
+(10, 'Sophia Clark', 'sophia.clark@example.com', '888-890-1234');
+
+INSERT INTO Categories(category_id, category_name) 
+VALUES
+(1, 'Electronics'),
+(2, 'Clothing'),
+(3, 'Home Appliances'),
+(4, 'Books'),
+(5, 'Sports'),
+(6, 'Toys'),
+(7, 'Beauty'),
+(8, 'Furniture'),
+(9, 'Groceries'),
+(10, 'Automotive');
+
+INSERT INTO orders()
